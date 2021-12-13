@@ -1,3 +1,9 @@
+.container {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .header {
     padding: 40px 0 0 0;
     min-height: 100vh;
@@ -9,6 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 0 270px 0;
     }
 
     &__container {
@@ -38,6 +45,10 @@
     &__link {
         font-size: 16px;
         line-height: 150%;
+        transition: color 300ms ease 0s;
+        &:hover {
+            color: rgb(124, 124, 252);
+        }
     }
 
     &__login {
@@ -50,9 +61,43 @@
         border-radius: 50px;
         padding: 10px 0;
         text-align: center;
-        transition: transform 300ms ease 0s;
+        transition: all 200ms ease 0s;
         &:hover {
-            transform: scale(1.1, 1);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.header {
+    &__content {
+    }
+
+    &__title {
+        font-size: 64px;
+        line-height: 140%;
+        max-width: 920px;
+        margin: 0 0 50px 0;
+    }
+}
+.time {
+    max-width: 535px;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        padding: 20px 0;
+        width: 102px;
+        height: 112px;
+        background-color: #121212;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 140%;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: rgb(121, 121, 121);
         }
     }
 }
