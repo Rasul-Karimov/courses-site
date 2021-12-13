@@ -8,6 +8,7 @@
   padding: 40px 0 0 0;
   min-height: 100vh;
   background: url(../img/main-screen__bgc.jpg) center/cover no-repeat;
+  position: relative;
 }
 
 .header__top {
@@ -20,7 +21,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 270px 0;
+  margin: 0 0 120px 0;
 }
 
 .header__container {
@@ -111,4 +112,122 @@
   line-height: 140%;
   text-align: center;
   color: #797979;
+}
+
+.take-course {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  background-color: #121212;
+  padding: 32px 0;
+}
+
+.take-course__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.take-course__button {
+  width: 169px;
+  height: 44px;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  padding: 10px 0;
+  margin-right: 80px;
+}
+
+.take-course__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr/ 1fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  margin-right: 80px;
+}
+
+.take-course__info p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #6e6e6e;
+}
+
+.take-course__info span {
+  line-height: 150%;
+  color: white;
+  font-weight: bold;
+}
+
+.take-course__progress p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #6e6e6e;
+}
+
+.take-course__progress span {
+  display: inline-block;
+  margin-left: 50px;
+  line-height: 150%;
+  color: white;
+  font-weight: bold;
+}
+
+.take-course__linear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 650px;
+}
+
+.take-course__line-one {
+  width: 350px;
+  text-align: left;
+  position: relative;
+  padding: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6e6e6e;
+}
+
+.take-course__line-one::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+
+.take-course__line-two {
+  width: 200px;
+  text-align: right;
+  position: relative;
+  padding: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6e6e6e;
+}
+
+.take-course__line-two::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
 }
