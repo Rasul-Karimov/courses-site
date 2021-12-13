@@ -1,1 +1,67 @@
-/* No CSS */
+.header {
+  padding: 40px 0 0 0;
+  min-height: 100vh;
+  background: url(../img/main-screen__bgc.jpg) center/cover no-repeat;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__container {
+  max-width: 1780px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  margin-right: 56px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.header__login {
+  margin-left: 270px;
+  font-size: 16px;
+  line-height: 150%;
+  width: 183px;
+  height: 44px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50px;
+  padding: 10px 0;
+  text-align: center;
+  -webkit-transition: -webkit-transform 300ms ease 0s;
+  transition: -webkit-transform 300ms ease 0s;
+  transition: transform 300ms ease 0s;
+  transition: transform 300ms ease 0s, -webkit-transform 300ms ease 0s;
+}
+
+.header__login:hover {
+  -webkit-transform: scale(1.1, 1);
+          transform: scale(1.1, 1);
+}

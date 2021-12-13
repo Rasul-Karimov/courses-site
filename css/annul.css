@@ -38,6 +38,8 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-family: Roboto;
+    color: white;
 }
 
 input,
@@ -58,7 +60,9 @@ button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
-
+a {
+    color: inherit;
+}
 a,
 a:visited {
     text-decoration: none;
