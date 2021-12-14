@@ -404,6 +404,7 @@ body {
 }
 
 .partners {
+  padding: 0 0 200px 0;
   background-color: black;
 }
 
@@ -433,4 +434,334 @@ body {
   -ms-grid-columns: (minmax(310px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   justify-items: center;
+}
+
+.timetable {
+  background-color: black;
+  padding: 0 0 172px 0;
+}
+
+.timetable__top {
+  text-align: center;
+}
+
+.timetable__img {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-bottom: 61px;
+}
+
+.timetable__title {
+  font-size: 48px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.timetable__subtitle {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  color: #6e6e6e;
+}
+
+.timetable__block {
+  max-width: 750px;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.timetable__scheduol-items {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.timetable__scheduol-items:last-child {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.timetable__scheduol-items:last-child .timetable__scheduol-title {
+  font-size: 14px;
+  text-align: left;
+}
+
+.timetable__scheduol-items:last-child .timetable__scheduol-text {
+  text-align: left;
+}
+
+.timetable__scheduol-items:last-child .timetable__scheduol-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 2px;
+  background-color: #afafaf;
+}
+
+.timetable__scheduol-title {
+  font-size: 14px;
+  text-align: right;
+  color: #6e6e6e;
+}
+
+.timetable__scheduol-text {
+  text-align: right;
+  margin: 15px 0 0 0;
+  font-size: 18px;
+  position: relative;
+}
+
+.timetable__scheduol-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -75px;
+  width: 50px;
+  height: 2px;
+  background-color: #afafaf;
+}
+
+.timetable__line {
+  width: 6px;
+  height: 677px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+
+.teachers {
+  padding: 0 0 200px 0;
+  background-color: black;
+}
+
+.teachers__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 113px;
+}
+
+.teachers__logo {
+  margin-right: 40px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.teachers__title {
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.teachers__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.teachers__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.teachers__img {
+  margin: 0 auto;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.teachers__img img {
+  -webkit-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+  width: 100%;
+}
+
+.teachers__img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.teachers__name {
+  font-size: 24px;
+  line-height: 140%;
+  margin-top: 40px;
+}
+
+.teachers__skiil {
+  color: #6e6e6e;
+  margin: 15px 0 30px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.teachers__more-button {
+  width: 143px;
+  height: 44px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  -webkit-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+
+.teachers__more-button:hover {
+  background: #451046;
+  border-radius: 50px;
+}
+
+.sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 30px 0;
+  background-color: black;
+  text-align: center;
+}
+
+.sign-up__title {
+  font-size: 48px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.sign-up__subtitle {
+  color: #6e6e6e;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.sign-up__form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
+
+.sign-up__input {
+  padding: 0 20px;
+  width: 400px;
+  height: 44px;
+  background: #ffffff;
+  opacity: 0.25;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.sign-up__input::-webkit-input-placeholder {
+  color: black;
+  font-size: 18px;
+}
+
+.sign-up__input:-ms-input-placeholder {
+  color: black;
+  font-size: 18px;
+}
+
+.sign-up__input::-ms-input-placeholder {
+  color: black;
+  font-size: 18px;
+}
+
+.sign-up__input::placeholder {
+  color: black;
+  font-size: 18px;
+}
+
+.sign-up__button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  width: 160px;
+  height: 44px;
+  margin-left: -20px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.sign-up__emessanger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.sign-up__vk, .sign-up__youtube, .sign-up__facebook, .sign-up__insta {
+  display: inline-block;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+}
+
+.sign-up__vk:hover, .sign-up__youtube:hover, .sign-up__facebook:hover, .sign-up__insta:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 1280px) {
+  .header__login {
+    margin-left: 20px;
+  }
+  .take-course__block {
+    display: block;
+  }
 }
